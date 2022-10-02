@@ -1,0 +1,13 @@
+body{
+    background-color: antiquewhite;}
+
+    .btncontainer{
+        padding: 1%;
+        text-align: center;
+        background-color: antiquewhite;
+        width: 100%;
+    }
+    .table-container{
+        padding: 1%;
+        text-align: center;
+    }

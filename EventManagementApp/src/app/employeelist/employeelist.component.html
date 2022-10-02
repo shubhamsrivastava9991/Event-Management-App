@@ -1,0 +1,25 @@
+<div class="btncontainer">
+
+    <button type="button" class="btn btn-secondary"   [routerLink]="['/newemployee']" >Add Employee </button>
+    
+</div>
+
+<div class="table-container">
+    <div> <h4 style="color: green;">Employee List</h4> </div>
+<table  class="table table-striped table-bordered">
+    <tr>
+        <th>id</th>
+    <th>firstname</th>
+    <th>lastname </th>
+    <th>email </th>
+    </tr>
+    <tr *ngFor="let emp of employees">
+        <td>{{emp.id}}</td>
+        <td>{{emp.first_name}}</td>
+        <td>{{emp.last_name}}</td>
+        <td>{{emp.email}}</td>
+         <button class="btn btn-info" [routerLink]="['/employee/', emp.id]" >view details</button> 
+    </tr>
+    
+</table>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="form-container">
+  <h4>Add New Employee</h4>
+<form  [formGroup]="addEmpForm">
+
+  <label for="">First Name </label>
+  <input formControlName="firstname" type="text" >
+  <br><br>
+  <label for="">Last Name </label>
+  <input formControlName="lastname" type="text" >
+  <br><br>
+  <label for="">Email Address </label>
+  <input formControlName="email" type="email" required  >
+  <br><br>
+   
+  <button class="btn btn-primary" type="button" [disabled]="! addEmpForm.valid" (click)="addEmp()" [routerLink]="['/employeeslist']">Save </button>
+</form>
+
+</div>

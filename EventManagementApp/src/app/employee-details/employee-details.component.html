@@ -1,0 +1,24 @@
+<div class="table-heading"><h3>Employee Details</h3></div>
+<table class="table">
+    
+    
+    <tr>
+        <th>id</th>
+    <th>firstname</th>
+    <th>lastname </th>
+    <th>email </th>
+    </tr>
+    <tr >
+        <td>{{employee.id}}</td>
+        <td>{{employee.first_name}}</td>
+        <td>{{employee.last_name}}</td>
+        <td>{{employee.email}}</td>    
+    </tr>
+    
+</table>
+
+    <div class="btn-container">
+     <button class="btn btn-secondary" [routerLink]="['/employeeslist']">Employee List</button> &NonBreakingSpace;
+     <button class="btn btn-danger" [routerLink]="['/employeedelete/', employee.id]">Delete</button> &NonBreakingSpace;
+     <button class="btn btn-primary" [routerLink]="['/employeeupdate/', employee.id]">Update</button>
+    </div>
